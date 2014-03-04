@@ -387,6 +387,9 @@ footer a:hover {
 	display:block;
 	padding:10px;
 }
+.main-nav a:link{
+	text-decoration:underline;
+}
 .main-nav a:link, .main-nav a:hover, .main-nav a:active, .main-nav a:visited{
 	color:#fff;
 }
