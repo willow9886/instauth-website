@@ -1,14 +1,4 @@
-# Initial Installation Questionnaire for GLUU EDU Private Cloud Server  
-1. Organization Information | Answers
-   ------------------------ | ------------------------
-   Name of Organization     |                    
-   Street Address           |                         
-   Postal Code              |                         
-   State                    |
-   City                     |
-   Contact Phone            |
-   Email Address            |
-
-2. Do you have an existing IDP?
-   Hostname                 | Coment
-   ------------------------   ------------------------
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
