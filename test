@@ -1,87 +1,14 @@
-<h2>2.1.3 Manage LDAP Authentication</h2>
+# Initial Installation Questionnaire for GLUU EDU Private Cloud Server  
+1. Organization Information | Answers
+   ------------------------ | ------------------------
+   Name of Organization     |                    
+   Street Address           |                         
+   Postal Code              |                         
+   State                    |
+   City                     |
+   Contact Phone            |
+   Email Address            |
 
-<br>
-
-<p>This feature allows the Gluu Server Administrator to define how and where the server should connect to authenticate users. 
-If it is a remote LDAP / Active Directory server, values are required. These values can also be used if the 
-Organization uses the Gluu Serverís local LDAP for authentication. </p>
-
-<img src = "url">
-
-<ul>
-
-<li><b><i>Deactivate:</i></b>  This button Activates/Deactivates the Gluu Server accessibility for authentication.</li>
-
-<li><b><i>Name:</i></b>  Name of the authentication server.</li>
-
-<li><b><i>Bind DN:</i></b> Username to connect authentication server ( local LDAP / Remote AD / Remote LDAP )</li>
-
-<li><b><i>Use SSL: </i></b> If the authentication server needs to use a secured port ( i.e: 636 ), 
-this feature should be activated.</li>
-
-<li><b><i>Max Connections: </i></b>This box can be used to define the total number of simultaneous 
-connections allowed for reading LDAP/Remote AD/LDAP server.</li>
-
-<li><b><i>Server: </i></b> Authentication serverís unique name with port number. ( i.e: auth.company.com:636 )</li>
-
-<li><b><i>Base DN:  </i></b> Add Base DNs which allow the Gluu Server to connect and search the LDAP. 
-Every directory tree should be added separately 
-by using ìAdd base DNî option.</li>
-
-<li><b><i>Primary key:  </i></b> Primary key to connect authentication server. (i.e: sAMAccountName / uid / mail etc)</li>
-
-<li><b><i>Local Primary Key:  </i></b> Name of Gluu Serverís internal LDAP primary key. Generally, this is usually 
-either ìuidî or ìmailî</li>
-
-<li><b><i>Enabled:  </i></b> Activate this key after successful insertion of data.</li>
-
-<li><b><i>Change Bind Password: </i></b> Use this button to provide a passphrase which can be used to 
-authenticate the authentication server. </li>
-
-<li><b><i>Test LDAP Connection:  </i></b>Letís check if our provided information can really connect to the authentication server. 
-This scan is real time and should be used by all Gluu Server Administrators.</li>
-
-</ul>
-
-<h2>2.1.4 System Configuration:</h2>
-
-
-
-<p>System Configuration allows the Gluu Server administrator to choose various options like ìAuthentication Modeî or ìSCIM Supportî 
-to be enabled or disabled system wide. </p>
-
-<img src = "url">
-
-<ul>
-<li><b><i>Authentication Mode:  </i></b> Various types of authentication methods can be chosen from this interface. 
-Out of the box, the Gluu Server allows ëbasicí username/password authentication against the serverís local LDAP or 
-any remote Active Directory/LDAP. In addition to passwords, various commercial or custom strong authentication 
-mechanisms can be enabled as well.</li>
-
-<li><b><i>Authentication Level:  </i></b> Authentication level is a domain specific value that can be used 
-to rate the relative security level for different authentication mechanisms. </li>
-
-<li><b><i>White Pages:  </i></b>If the Organization wants to use the Gluu Serverís built-in ìWhite Pagesî option, 
-it can be enabled from here. </li>
-
-<li><b><i>Federation Hosting:  </i></b> By default federation hosting is enabled. However, federation creation 
-and operation can be complicated. Gluu offers an additional service called Federation Registry for those organizations 
-interested in our assistance utilizing this feature. </li>
-
-<li><b><i>Cache Refresh:  </i></b> ìCache Refreshî is a Gluu mechanism that pulls and syncs user information from a 
-remote LDAP / Active Directory with the Gluu Serverís local LDAP. The Gluu Server administrator needs to provide 
-sufficient information including username/password in Cache Refresh configuration before enabling this option. </li>
-
-<li><b><i>SCIM Support:  </i></b> If your organization currently has an identity management or provisioning system in place, using the 
-SCIM protocol your organization can  push and sync all relevant identity information to the Gluu Server. 
-</li>
-
-<li><b><i>DNS Server(s):  </i></b> Organization can add DNS server info here.</li>
-
-<li><b><i>Maximum Log Size:  </i></b> This option can be used to help mitigate space issues within the Gluu Server. 
-The Gluu Server will automatically zip any logs which are greater than defined value of this field. i.e: 
-If Gluu Server Administrator use 200MB for ìMaximum Log Sizeî, Gluu Server will automatically start zipping 
-those files which are / will be more than 200MB.</li>
-
-</ul>
-
+2. Do you have an existing IDP?
+   Hostname                 | Coment
+   ------------------------   ------------------------
