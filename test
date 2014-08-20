@@ -1,8 +1,4 @@
-|  Name of Organization             |                                                  |
-|-----------------------------------|--------------------------------------------------|
-| Street Address                    |                                                  |
-| Postal Code                       |                                                  |
-| State                             |                                                  |
-| City                              |                                                  |
-| Contact Phone                     |                                                  |
-|                                   |                                                  |
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
